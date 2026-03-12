@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wesley Pomini | Portfolio</title>
+    <title>Wesley Pomini | Portfólio</title>
     <style>
-        /* Estética Minimalista */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
         :root {
-            --bg: #fafafa;
-            --text: #1a1a1a;
-            --accent: #575757;
-            --border: #e0e0e0;
+            --bg: #fdfafb;        /* Fundo bem suave, confortável */
+            --text: #333131;      /* Cinza escuro, menos agressivo que preto */
+            --rose: #f472b6;      /* Rosa vibrante, mas elegante */
+            --rose-light: #fce7f3; /* Fundo do tag */
+            --accent: #8b8b8b;    /* Cinza neutro para textos secundários */
+            --border: #f1e4e8;    /* Borda delicada */
         }
 
         body {
@@ -20,35 +21,42 @@
             background-color: var(--bg);
             color: var(--text);
             line-height: 1.8;
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
 
-        header { margin-bottom: 80px; }
-        nav { display: flex; gap: 20px; }
-        nav a { text-decoration: none; color: var(--accent); font-size: 0.9rem; transition: 0.2s; }
-        nav a:hover { color: var(--text); font-weight: bold; }
+        header { margin-bottom: 100px; }
+        nav { display: flex; gap: 30px; }
+        nav a { text-decoration: none; color: var(--accent); font-size: 0.9rem; transition: 0.3s; }
+        nav a:hover { color: var(--rose); font-weight: 600; }
 
-        section { margin-bottom: 60px; }
-        h1 { font-size: 2.5rem; letter-spacing: -1px; margin-bottom: 10px; }
-        h2 { font-size: 1.2rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); }
+        section { margin-bottom: 80px; }
+        h1 { font-size: 2.8rem; letter-spacing: -1.5px; margin-bottom: 15px; color: #1a1a1a; }
+        h2 { font-size: 0.9rem; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 3px; color: var(--rose); }
 
         .project-list { list-style: none; }
-        .project-item { padding: 20px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-        .project-item:hover { color: var(--accent); }
-        .project-item a { text-decoration: none; color: inherit; font-weight: 500; }
-
-        .tag { font-size: 0.75rem; background: #eee; padding: 2px 8px; border-radius: 4px; }
+        .project-item { padding: 25px 0; border-bottom: 1px solid var(--border); transition: 0.3s; }
+        .project-item:hover { border-bottom-color: var(--rose); }
+        .project-item a { text-decoration: none; color: inherit; display: flex; justify-content: space-between; align-items: center; }
         
-        footer { font-size: 0.8rem; color: var(--accent); border-top: 1px solid var(--border); padding-top: 20px; }
+        .tag { 
+            font-size: 0.7rem; 
+            background: var(--rose-light); 
+            color: #be185d; 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            font-weight: 600;
+        }
+
+        footer { font-size: 0.8rem; color: var(--accent); margin-top: 100px; }
     </style>
 </head>
 <body>
 
     <header>
         <nav>
-            <a href="#">WP</a>
+            <a href="#"><strong>WP</strong></a>
             <a href="mailto:seuemail@exemplo.com">Contato</a>
         </nav>
     </header>
@@ -56,7 +64,7 @@
     <main>
         <section>
             <h1>Wesley Pomini</h1>
-            <p>Desenvolvedor Front End, focado em interfaces limpas e código eficiente. Atualmente aprimorando minhas habilidades com React.</p>
+            <p>Desenvolvedor Front End, apaixonado por criar interfaces limpas e experiências digitais fluidas. Atualmente aprimorando minhas habilidades com React.</p>
         </section>
 
         <section id="projetos">
@@ -66,19 +74,19 @@
                     <a href="#">Landing Page Institucional <span class="tag">HTML/CSS</span></a>
                 </li>
                 <li class="project-item">
-                    <a href="#">Gerenciador de Tarefas <span class="tag">JS</span></a>
+                    <a href="#">Gerenciador de Tarefas <span class="tag">JavaScript</span></a>
                 </li>
             </ul>
         </section>
 
         <section id="sobre">
             <h2>Sobre</h2>
-            <p>Acredito que o bom código é aquele que resolve problemas de forma simples. Sempre buscando aprender novas tecnologias e colaborar em projetos interessantes.</p>
+            <p>Acredito que o bom código é aquele que resolve problemas de forma simples e elegante. Estou sempre em busca de aprender novas tecnologias para construir soluções que façam a diferença.</p>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Wesley Pomini — Disponível para novos desafios.</p>
+        <p>© 2026 Wesley Pomini — Desenvolvido com dedicação.</p>
     </footer>
 
 </body>
